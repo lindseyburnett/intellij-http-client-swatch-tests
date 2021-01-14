@@ -1,0 +1,92 @@
+GET {{base_url}}/hosts/products/OpenShift%20Container%20Platform
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20Compute%20Node
+x-rh-identity: {{identity}}
+
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20Desktop
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20for%20ARM
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20for%20IBM%20Power
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20for%20IBM%20Power
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20for%20IBM%20z
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20for%20x86
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20Server
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/RHEL%20Workstation
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/Satellite
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/Satellite%20Capsule
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/Satellite%20Server
+x-rh-identity: {{identity}}
+
+###
+
+GET {{base_url}}/hosts/products/Satellite%206
+x-rh-identity: {{identity}}
+
+> {%
+client.test("Successfully detected old enum (Satellite 6) as bad value", function() {
+  client.assert(response.status === 400, "Response status is not 400");
+});
+%}
+
+###
+
+GET {{base_url}}/hosts/products/Satellite%206%20Capsule
+x-rh-identity: {{identity}}
+
+> {%
+client.test("Successfully detected old enum (Satellite 6 Capsule) as bad value", function() {
+  client.assert(response.status === 400, "Response status is not 400");
+});
+%}
+
+###
